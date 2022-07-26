@@ -1,0 +1,61 @@
+# 클래스 도입의 필요성
+
+# 학생의 정보를 출력하는 함수
+def student_info(name, department, professor, phone, address, grade) :
+    print(name)
+    print(department)
+    print(professor)
+    print(phone)
+    print(address)
+    print(grade)
+
+name1 = 'emily'
+department1 = 'computer engineering'
+professor1 = 'james'
+phone1 = '010-1234-5678'
+address1 = 'seoul'
+grade1 = 'A'
+
+student_info(name1, department1, professor1, phone1, address1, grade1 )
+
+name2 = 'alice'
+department2 = 'chemical engineering'
+professor2 = 'david'
+phone2 = '010-4321-4321'
+address2 = 'busan'
+grade2 = 'B'
+
+student_info(name2, department2, professor2, phone2, address2, grade2 )
+
+
+
+
+
+class Student() :
+    def __init__(self, name, department, professor, phone, address, grade) :
+        self.name = name
+        self.department = department
+        self.professor = professor
+        self.phone = phone
+        self.address = address
+        self.grade = grade
+
+    def student_info(self) :
+        print('-' * 20)
+        print(self.name)
+        print(self.department)
+        print(self.professor)
+        print(self.phone)
+        print(self.address)
+        print(self.grade)
+
+
+student1 = Student('emily', 'computer enginering', 'james', '010-1234-5678', 'seoul', 'A')
+student2 = Student('alice', 'chemical enginering', 'david', '010-4321-4321', 'busan', 'B')
+student1.student_info()
+student2.student_info()
+print()
+print(student1.name)
+
+
+
